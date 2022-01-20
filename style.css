@@ -48,6 +48,9 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0;
   overflow: hidden;
   width: 80%;
@@ -55,7 +58,6 @@ body {
 
 header {
   color: #6070FF;
-  padding-top: 30px;
   min-height: 72px;
 }
 
@@ -66,31 +68,25 @@ header a {
   font-size: 16px;
 }
 
-header ul {
-  margin: 0;
-  padding: 0;
-}
-
-header li {
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
-}
-
-header #logo {
- font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-  float: left;
-  font-weight: bold;
-}
-
-header #logo h1 {
-  margin: 0;;
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 30px;
+  align-items: center;
 }
 
 header nav {
-  float: right;
-  margin-top: 10px;
+  display: flex;
+  align-content: center;
 }
+
+#logo {
+ font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+ font-weight: bold;
+ margin-left: 200px;
+}
+
 
 .homebody {
   height: 846px;
@@ -109,13 +105,13 @@ height: 721.46px;
 
 display: flex;
 align-items: center;
-letter-spacing: 1px;
+letter-spacing: 0.0001em;
   margin-top: 200px;
   margin-left: 260px;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
-  line-height: 60px;
+  line-height: 100px;
   color: #091E42;
   
 }
