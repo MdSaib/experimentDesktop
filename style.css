@@ -54,6 +54,7 @@ body {
   margin: 0;
   overflow: hidden;
   width: 80%;
+  /* width: 100%; */
 }
 
 header {
@@ -89,16 +90,14 @@ header nav {
 
 
 .homebody {
-  height: 846px;
-  border: solid;
+  height: 721.46px;
+  width: 100%;
+  /* border: solid; */
   background-image: url(icon/HeaderShapesD.svg);
+  /* background-position: top -100px right 0; */
   background-repeat: no-repeat;
   background-size: cover;
-
-  min-width: 1397px;
-height: 721.46px;
-
-
+  /* min-width: 1397px; */
 }
 
 .text1 {
@@ -106,7 +105,7 @@ height: 721.46px;
 display: flex;
 align-items: center;
 letter-spacing: 0.0001em;
-  margin-top: 200px;
+  /* margin-top: 200px; */
   margin-left: 260px;
   font-style: normal;
   font-weight: bold;
@@ -114,6 +113,11 @@ letter-spacing: 0.0001em;
   line-height: 100px;
   color: #091E42;
   
+}
+
+.text1 h2 {
+  position: relative;
+  top: 20;
 }
 
 #text2 {
