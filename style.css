@@ -1,43 +1,3 @@
-/*body {
-  display: grid;
-  grid-template-areas: 'main' 'footer';
-  background: #f4f5f7;
-  font-family: 'Poppins', sans-serif;
-  width: 100%;
-}
-
-main {
-  grid-area: main;
-  grid-row: 1/2;
-  border: solid black;
-}
-
-.portheader {
-  grid-area: header;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100%;
-  height: 76px;
-}
-
-header .msLogo {
-  display: grid;
-      grid-column: 1 / 2;
-  }
-header .menuBar ul {
-    display: grid;
-    grid-column: 2 / 3;
-    list-style: none;
-  }
-
-
-
-
-footer  {
-  grid-area: footer;
-  grid-row: 2 /3;
-  border: solid black;
-  }
-*/
 
 body {
   background: #f4f5f7;
@@ -158,11 +118,12 @@ text-decoration: none;
   height: 24px;
 }
 
+
 .work {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 25% 25% 25% 25%;
-  grid-row-gap: 1px;
+  grid-row-gap: 1em;
   margin: auto;
 }
 
@@ -193,30 +154,32 @@ text-decoration: none;
 }
 
 .work2 {
-  margin: auto;
   display: grid;
   grid-area: 2 / 1 / 3 / 3;
-  grid-template-areas: 'article image';
+  margin: auto;
   height: 496px;
   width: 1156px;
   border: 1px solid #dfe1e6;;
   border-radius: 24px;
   background: #fff;
+
 }
 
 .work2 aside {
-  grid-area: image;
-  grid-column: 2 / 3;
-  margin: 24px;
-}
-.work2 aside img {
-  border-radius: 8px;
+  display: grid;
+  grid-column: 2 / span 1;
 }
 
-.work2 article {
-  grid-area: article;
-  grid-column: 1 / 2;
+.work2 aside img {
+  float: right;
+  display: grid;
   margin: 24px;
+  border-radius: 8px;
+}
+.work2 article {
+  margin-left: 3em;
+  display: grid;
+  grid-column: 1 / 2;
 }
 
 .work3 {
@@ -268,6 +231,7 @@ text-decoration: none;
   border-radius: 8px;
 }
 .work4 article {
+  margin-left: 3em;
   display: grid;
   grid-column: 1 / 2;
 }
@@ -305,7 +269,18 @@ text-decoration: none;
 .client {
   list-style: none;
   color: #344563;
+  padding-right: 13px;
 }
+
+.job {
+  padding: 0 5px 0 5px;
+  margin-right: 1px;
+}
+
+.year {
+  padding: 0 5px 0 1px;
+}
+
 
 .projectInfo {
   position: static;
